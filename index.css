@@ -78,3 +78,24 @@ h1 {
 .accordion-item.open .imgLogo2 {
   display: inline-block;
 }
+
+
+.img0{
+height: 100px;
+width: 100px;
+justify-content: left;
+align-items: center;
+}
+
+.img1{
+  height: 100px;
+  width: 100px;
+  justify-content: left;
+  align-items: center;
+}
+.img2{
+  height: 100px;
+  width: 100px;
+  justify-content: left;
+  align-items: center;
+}
