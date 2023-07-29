@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.accordion {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc; /* Divider between accordion items */
+}
+
+.accordion-item:last-child {
+  border-bottom: none; /* Remove the divider for the last item */
+}
+
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: black;
+  color: white;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.accordion-item.open .plusSymbol {
+  content: "-";
+}
+
+.factText {
+  flex-grow: 1;
+  padding: 10px;
+  color: #000; /* Black text color */
+}
+
+.plusSymbol {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.imgLogo2:hover {
+  transform: rotate(180deg); /* Inverted logo on hover */
+}
+
+.accordion-item.open .imgLogo {
+  display: none;
+}
+
+.accordion-item.open .imgLogo2 {
+  display: inline-block;
+}
