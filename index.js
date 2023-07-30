@@ -23,7 +23,7 @@
 
       accordionContent.innerHTML = `
         <p>${catInfo.fact}</p>
-        <img src="${catImg.imageUrl}" alt="Random Cat Image">
+        <img src="${catImg.imageUrl}" alt="Random Cat Image" class='img0'>
       `;
       accordionContent.style.display = 'block';
       factText.textContent = 'Click to close fact';

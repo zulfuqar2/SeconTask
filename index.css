@@ -71,25 +71,6 @@ h1 {
   display: none;
 }
 
-.img0 {
-  height: 100px;
-  width: 100px;
-  justify-content: left;
-  align-items: center;
-}
-
-.img1 {
-  height: 100px;
-  width: 100px;
-  justify-content: left;
-  align-items: center;
-}
-.img2 {
-  height: 100px;
-  width: 100px;
-  justify-content: left;
-  align-items: center;
-}
 
 .imgLogo {
   display: block;
@@ -123,4 +104,10 @@ h1 {
 .logoImg .imgLogo:hover + .imgLogo2 {
   display: block;
   background-color: #000;
+}
+
+.img0{
+  height: 150px;
+  width: 200px;
+  margin: 50px;
 }
