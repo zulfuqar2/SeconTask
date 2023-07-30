@@ -1,1 +1,1 @@
-# Task2.
+ In addition, I used random Cat api so that everything is automatic and more interesting, new information and cute cat pictures will welcome us every time it is clicked.
