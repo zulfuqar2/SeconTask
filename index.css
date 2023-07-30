@@ -67,35 +67,60 @@ h1 {
   margin-right: 10px;
 }
 
-.imgLogo2:hover {
-  transform: rotate(180deg); /* Inverted logo on hover */
-}
-
 .accordion-item.open .imgLogo {
   display: none;
 }
 
-.accordion-item.open .imgLogo2 {
-  display: inline-block;
-}
-
-
-.img0{
-height: 100px;
-width: 100px;
-justify-content: left;
-align-items: center;
-}
-
-.img1{
+.img0 {
   height: 100px;
   width: 100px;
   justify-content: left;
   align-items: center;
 }
-.img2{
+
+.img1 {
   height: 100px;
   width: 100px;
   justify-content: left;
   align-items: center;
+}
+.img2 {
+  height: 100px;
+  width: 100px;
+  justify-content: left;
+  align-items: center;
+}
+
+.imgLogo {
+  display: block;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+
+.imgLogo2 {
+  display: none;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.logoImg .imgLogo:hover {
+  display: none;
+ 
+}
+
+.logoImg .imgLogo2 {
+  display: none;
+ 
+}
+
+.logoImg .imgLogo:hover + .imgLogo2 {
+  display: block;
+  background-color: #000;
 }
