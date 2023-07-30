@@ -18,18 +18,19 @@ async function toggleAccordion(event) {
     accordionItem.classList.remove("open");
   } else {
     const catInfo = await fetchCatInfo();
-    const catImg = await fecthCatImg();
+    const catImg = await fetchCatImg();
 
     accordionContent.innerHTML = `
-        <p>${catInfo.fact}</p>
-        <img src="${catImg.imageUrl}" alt="Random Cat Image" class='img0'>
-      `;
+      <p>${catInfo.fact}</p>
+      <img src="${catImg.imageUrl}" alt="Random Cat Image" class='img0'>
+    `;
     accordionContent.style.display = "block";
     factText.textContent = "Click to close fact";
     plusSymbol.textContent = "-";
     accordionItem.classList.add("open");
   }
 }
+
 async function fetchCatInfo() {
   try {
     const response = await fetch("https://catfact.ninja/fact");
@@ -45,7 +46,7 @@ async function fetchCatInfo() {
   }
 }
 
-async function fecthCatImg() {
+async function fetchCatImg() {
   try {
     const response = await fetch(
       "https://api.thecatapi.com/v1/images/search?limit=1&api_key=YOUR_CAT_API_KEY"
